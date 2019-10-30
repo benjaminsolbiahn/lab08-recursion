@@ -11,11 +11,13 @@ int main() {
   std::cout << "\n";
   std::cout << "Please enter a number you want to search for: ";
   std::cin >> choice;
-  int index;
+  int index = 0;
   // Provide code that calls the linear_search function to find the number that
   // the user provided. Return the index of the value in the array
   // or -1 if it is not in the array. Store the value in the variable named
   // index
+
+  linear_search(array, choice, index);
 
   if (index == -1) {
     std::cout << choice << " is not in the array"
